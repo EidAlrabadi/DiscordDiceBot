@@ -13,7 +13,10 @@ Once there, simply click the drop down menu and add the bot "Dice Bot" to your s
 
 This will add the bot to your server.
 
-To run the dice command, type in !rolLDice in the discord chat, and the dice will be rolled.
+To run the dice command, type in !rollDice in the discord chat, and the dice will be rolled.
+
+Cloning this REPO will not work as the client ID will be unique to your own discord user. Please use the link.
+
 
 
 
