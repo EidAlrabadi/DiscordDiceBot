@@ -48,6 +48,10 @@ bot.on("message", async message => {
         return message.channel.send(botembed);
     }
 
+    if(cmd === `${prefix}owner`){
+        return message.channel.send("Eid A.");
+    }
+
 
         if(cmd === `${prefix}rollDice`){
 
