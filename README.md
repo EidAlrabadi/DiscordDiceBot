@@ -7,7 +7,7 @@ This is a bot for the application "Discord" that will imitate the rolling of a d
 via the following link.
 
 
-https://discordapp.com/oauth2/authorize?client_id=543278810783809556&scope=bot&permissions=8
+https://discordapp.com/oauth2/authorize?client_id=543278810783809556&scope=bot&permissions=112640
 
 Once there, simply click the drop down menu and add the bot "Dice Bot" to your server.
 
