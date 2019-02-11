@@ -66,7 +66,20 @@ bot.on("message", async message => {
 
         }
 
-    
+        if(cmd === `${prefix}roll2Dice`){
+
+        var dice1 = Math.floor((Math.random() * 6) + 1);
+        var dice1 = Math.floor((Math.random() * 6) + 1);
+        message.channel.send({files: ["./"+dice+".png"]});
+        return message.channel.send({files: ["./"+dice+".png"]});
+        }
+
+
+
+        function emoji (id){
+          return client.emojis.get(id).toString();
+
+        }
 
 
 
