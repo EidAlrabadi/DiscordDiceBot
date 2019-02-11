@@ -59,6 +59,28 @@ bot.on("message", async message => {
         return message.channel.send({files: ["./"+dice+".png"]});
         }
 
+
+
+        function emoji (id){
+          return client.emojis.get(id).toString();
+
+        }
+
+        if(cmd === `${prefix}roll2Dice`){
+            var emojiIDS = ["filler","544355163675164676","544359942161694741","544360008788344832","544360022507913236","544360030565040138","544360039478198272"]
+            var dice1 = Math.floor((Math.random() * 6) + 1);
+            var dice2 = Math.floor((Math.random() * 6) + 1);
+            const list = [emojiIDS[dice1],emojiIDS[dice2]]
+
+            return message.channel.send(emoji(list));
+
+          
+
+          }
+
+
+
+
 });
 
 bot.login(tokenfile.token);
