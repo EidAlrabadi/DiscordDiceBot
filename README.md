@@ -17,6 +17,10 @@ To run the dice command, type in !rollDice in the discord chat, and the dice wil
 
 Cloning this REPO will not work as the client ID will be unique to your own discord user. Please use the link.
 
+UPDATE: 3/1/2019
+
+Users were complaining about the ability to roll multiple dice at once, and this has now been implemented. To avoid server lagg, it's limited to two consecutive dice rolls.
+
 
 ![alt text](https://i.imgur.com/uGlYLmn.png)
 
