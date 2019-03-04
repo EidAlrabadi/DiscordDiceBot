@@ -18,6 +18,9 @@ To run the dice command, type in !rollDice in the discord chat, and the dice wil
 Cloning this REPO will not work as the client ID will be unique to your own discord user. Please use the link.
 
 
+![alt text](https://i.imgur.com/uGlYLmn.png)
+
+
 
 
 
