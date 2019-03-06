@@ -42,6 +42,14 @@ bot.on("message", async message => {
         return message.channel.send({files: ["./"+dice2+".png"]});
         }
 
+        if(cmd === `${prefix}roll3Dice`){        //roll two dice command
+
+        var dice1 = Math.floor((Math.random() * 6) + 1);
+        var dice2 = Math.floor((Math.random() * 6) + 1);
+        message.channel.send({files: ["./"+dice1+".png"]});
+        return message.channel.send({files: ["./"+dice2+".png"]});
+        }
+
 
 });
 
