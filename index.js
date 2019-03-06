@@ -45,12 +45,11 @@ bot.on("message", async message => {
 
         if(cmd === `${prefix}google`){        //google search algorithm
         var searchTerm = ""
-        for(i = 1; i < messageArray.length; i++){    //figure out the javascript of doing this
+        for(i = 1; i < messageArray.length; i++){    //make this javascript code
+          searchTerm += messageArray[i]
           searchTerm += " "
 
         }
-
-        
         return message.channel.send(searchTerm);
         }
 
