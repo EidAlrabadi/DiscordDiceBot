@@ -24,17 +24,14 @@ bot.on("message", async message => {
     }
 
 
-        if(cmd === `${prefix}rollDice`){        //roll one dice command
+        if(cmd === `${prefix}rollDice` || cmd === `${prefix}rolldice`){        //roll one dice command
 
         var dice = Math.floor((Math.random() * 6) + 1);
         return message.channel.send({files: ["./"+dice+".png"]});
         }
 
 
-
-
-
-        if(cmd === `${prefix}roll2Dice`){        //roll two dice command
+        if(cmd === `${prefix}roll2Dice` || cmd === `${prefix}roll2dice` ){        //roll two dice command
 
         var dice1 = Math.floor((Math.random() * 6) + 1);
         var dice2 = Math.floor((Math.random() * 6) + 1);
@@ -42,12 +39,17 @@ bot.on("message", async message => {
         return message.channel.send({files: ["./"+dice2+".png"]});
         }
 
-        if(cmd === `${prefix}roll3Dice`){        //roll two dice command
 
-        var dice1 = Math.floor((Math.random() * 6) + 1);
-        var dice2 = Math.floor((Math.random() * 6) + 1);
-        message.channel.send({files: ["./"+dice1+".png"]});
-        return message.channel.send({files: ["./"+dice2+".png"]});
+
+
+
+        if(cmd === `${prefix}google`){        //google stuff
+        var searchTerm = ""
+        for(i = 1; i < messageArray.length; i++){
+          searchTerm += messageArray[i]
+
+        }
+        return message.channel.send(searchTerm);
         }
 
 
