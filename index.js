@@ -43,12 +43,14 @@ bot.on("message", async message => {
 
 
 
-        if(cmd === `${prefix}google`){        //google stuff
+        if(cmd === `${prefix}google`){        //google search algorithm
         var searchTerm = ""
-        for(i = 1; i < messageArray.length; i++){
-          searchTerm += messageArray[i]
+        for(i = 1; i < messageArray.length; i++){    //figure out the javascript of doing this
+          searchTerm += " "
 
         }
+
+        
         return message.channel.send(searchTerm);
         }
 
