@@ -27,9 +27,9 @@ UPDATE: 3/1/2019
 Users were complaining about the ability to roll multiple dice at once, and this has now been implemented. To avoid server lagg, it's limited to two consecutive dice rolls.
 
 
+
+![alt_text](https://i.imgur.com/tAAznnG.jpg)
+
 ![alt text](https://i.imgur.com/uGlYLmn.png)
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/g2HIuEF"><a href="//imgur.com/g2HIuEF"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
-
-
 
 
