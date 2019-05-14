@@ -9,6 +9,8 @@
   "author": "Eid",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^11.4.2"
+    "cheerio": "^1.0.0-rc.2",
+    "discord.js": "^11.4.2",
+    "google-search-scraper": "^0.1.0"
   }
 }

@@ -1,3 +1,5 @@
+const request = require('request')
+const cheerio = require('cheerio')
 const botconfig = require("./botconfig.json");
 const Discord = require("discord.js");
 const tokenfile = require("./token.json")
@@ -43,15 +45,38 @@ bot.on("message", async message => {
 
 
 
-        if(cmd === `${prefix}google`){        //google search algorithm
+        if(cmd === `${prefix}define`){        //google search algorithm
         var searchTerm = ""
         for(i = 1; i < messageArray.length; i++){    //make this javascript code
           searchTerm += messageArray[i]
           searchTerm += " "
 
         }
-        return message.channel.send(searchTerm);
+        URL = "https://www.dictionary.com/browse/" + searchTerm
+        request(URL, (error,response,html) => {
+         if(!error && response.statusCode == 200){
+         const $ = cheerio.load(html)
+
+         const dtText = $(".one-click-content")
+         let dtTextString = dtText.text().toString()
+         let definition = dtTextString.substring(0,dtTextString.indexOf('.'))
+         return message.channel.send(definition)
+
+
+
+       }
+
+
+
+
+
+});
+
+
+
         }
+
+
 
 
 });
